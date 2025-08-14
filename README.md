@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 RutAprende
 
-## Getting Started
+**Tu plataforma de aprendizaje personalizada**
 
-First, run the development server:
+RutAprende es una aplicación web moderna construida con Next.js 15 que ofrece una experiencia de aprendizaje interactiva y personalizada. Descubre, aprende y crece con contenido educativo de calidad.
+
+## ✨ Características
+
+- 🔐 **Autenticación segura** con Firebase Auth
+- 📚 **Materiales educativos** organizados por categorías
+- 🎨 **Diseño responsive** con Tailwind CSS
+- 🌙 **Modo oscuro** automático
+- 🔍 **Búsqueda y filtros** avanzados
+- ⚡ **Rendimiento optimizado** con Next.js 15
+
+## 🚀 Demo
+
+Visita la aplicación desplegada: [rutaprende.vercel.app](https://rutaprende.vercel.app)
+
+## 🛠️ Tecnologías
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Estilos**: Tailwind CSS v4
+- **Autenticación**: Firebase Auth
+- **Base de datos**: Firebase Firestore
+- **Despliegue**: Vercel
+
+## 📦 Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone <tu-repositorio>
+   cd rutaprende
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Configurar Firebase**
+   - Crear un proyecto en [Firebase Console](https://console.firebase.google.com)
+   - Habilitar Authentication (Email/Password)
+   - Crear un archivo `.env.local` basado en `.env.example`
+   - Agregar las credenciales de Firebase
+
+4. **Ejecutar en desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+## ⚙️ Configuración de Firebase
+
+1. Crea un nuevo proyecto en Firebase Console
+2. Habilita Authentication → Email/Password
+3. Crea un archivo `.env.local` con tus credenciales:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_FIREBASE_API_KEY=tu_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=tu_proyecto_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=tu_proyecto.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=tu_app_id
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Despliegue
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+La aplicación está configurada para desplegarse fácilmente en Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Conecta tu repositorio a Vercel
+2. Agrega las variables de entorno de Firebase
+3. ¡Despliega automáticamente!
 
-## Learn More
+## 📱 Páginas
 
-To learn more about Next.js, take a look at the following resources:
+- **`/`** - Página de inicio con información de la plataforma
+- **`/login`** - Autenticación de usuarios (login/registro)
+- **`/materials`** - Catálogo de materiales educativos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Características del Producto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🏠 Página de Inicio
+- Diseño atractivo y moderno
+- Información clara sobre la plataforma
+- Llamadas a la acción prominentes
 
-## Deploy on Vercel
+### 🔐 Sistema de Autenticación
+- Login y registro con email/password
+- Manejo de errores en español
+- Protección de rutas
+- Estados de carga
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📚 Materiales Educativos
+- Catálogo con 6+ materiales de ejemplo
+- Filtros por categoría (Programación, Matemáticas, etc.)
+- Búsqueda en tiempo real
+- Información detallada de cada curso
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Scripts Disponibles
+
+```bash
+# Desarrollo
+npm run dev
+
+# Construcción
+npm run build
+
+# Producción
+npm start
+
+# Linting
+npm run lint
+```
+
+## 🤝 Contribución
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 📞 Contacto
+
+¿Tienes preguntas o sugerencias? 
+
+- 📧 Email: contacto@rutaprende.com
+- 🐙 GitHub: [@tuusuario](https://github.com/tuusuario)
+
+---
+
+**¡Construido con ❤️ para la educación!**
